@@ -1,0 +1,194 @@
+:root{
+    --first-color: #1CC40E;
+    --second-color: #0C6E04;
+    --third-color: #023033;
+    --fourth-color: #006066; 
+    --white-color: #f5f5f5;
+    --gray-color: #c8c8c8;
+    --dark-color: #17202A;
+
+    --first-font: 'Dancing Script', cursive;
+    --second-font: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(var(--third-color), var(--fourth-color));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.logo{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo__image{
+    width: 50px;
+}
+.logo__name{
+    font-family: var(--first-font);
+    color: var(--first-color);
+}
+
+.menu{
+    height: 100%;
+    width: 50%;
+}
+
+.menu__list{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__list--item a{
+    font-family: var(--second-font);
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    background-image: url("../Assets/MainBg.jpg");
+    height: 490px;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction{
+    padding: 30px;
+}
+.introduction h2{
+    font-family: var(--first-font);
+    color: var(--first-color);
+    font-size: 4rem;
+}
+
+.introduction p{
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.introduction ul{
+    list-style: none;
+}
+
+.introduction ul li{
+    margin: 5px 0;
+    font-family: var(--second-font);
+    color: var(--dark-color);
+}
+
+.signUpButton{
+    padding: 10px 130px;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    font-family: var(--second-font);
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+
+.signUpButton:hover{
+    cursor: pointer;
+    background-color: var(--second-color);
+}
+
+.signInButton{
+    padding: 10px 130px;
+    color: var(--first-color);
+    font-family: var(--second-font);
+    text-decoration: none;
+    border-radius: 50px;
+    border: solid 1px var(--first-color);
+}
+footer{
+    height: 90px;
+    background: linear-gradient(var(--third-color), var(--fourth-color));
+}
+
+.social__title{
+    font-family: var(--first-font);
+    color: var(--first-color);
+}
+.social__link{
+    font-family: var(--second-font);
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+
+/* SIGN UP*/
+
+.signUpFrame{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Assets/MainBg.jpg');
+}
+
+.signUpForm{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid var(--first-color);
+    border-radius: 25px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 80px 0px;
+}
+
+.signUpForm h2{
+    font-family: var(--first-font);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signUpForm label{
+    font-family: var(--second-font);
+}
+
+.signUpForm input{
+    border: none;
+    border-bottom: 1px solid var(--third-color);
+    border-radius: 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.signUpForm input[type="submit"]{
+    align-self: center;
+    width: 250px;
+    font-size: 2rem;
+    background-color: var(--first-color);
+    font-family: var(--first-font);
+    color: var(--white-color);
+    border: none;
+}
+
+.signUpForm input:focus{
+    outline: none;
+}
